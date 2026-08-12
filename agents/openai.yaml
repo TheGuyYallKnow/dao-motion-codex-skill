@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dao Motion"
+  short_description: "Author and safely compact Motion Lab graphs"
+  default_prompt: "Use $dao-motion to inspect and safely compact the selected Motion Lab graph, then validate, stage, organize, and apply it without running Preview or Play."
