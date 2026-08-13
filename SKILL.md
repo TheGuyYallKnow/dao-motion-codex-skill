@@ -1,11 +1,17 @@
 ---
 name: dao-motion
-description: Author, inspect, repair, validate, safely compact, stage, and apply Dao Motion Lab graphs entirely inside Roblox Studio through the official Roblox Studio MCP. Use for Motion Lab nodes, triggers, conditions, bindings, edges, timelines, graph cleanup or optimization, repeated-node reduction, custom techniques, harnesses, visual groups, recipes, Harness Presets, Advanced Text motion, runtime generation, or separating visual button motion from LocalScript gameplay communication. Never run a preview or enter Play mode; the user owns visual and runtime testing. Never use external programs, CLIs, daemons, HTTP APIs, WebSockets, filesystem synchronization, or direct writes to DaoMotion persistence.
+description: Author, inspect, validate, safely compact, stage, organize, and apply Dao Motion Lab node graphs inside Roblox Studio through the official Roblox Studio MCP. Use only when the user explicitly invokes $dao-motion to create or modify Motion Lab nodes, edges, bindings, graph structure, custom techniques, harnesses, visual groups, recipes, or Harness Presets. Do not use for Library Bridge plugin source, pipelines, runtime generation code, Scheduler, Emitter, Canvas, builds, tests, packaging, or general plugin bug fixes. Never run a preview or enter Play mode; the user owns visual and runtime testing. Never use external programs, CLIs, daemons, HTTP APIs, WebSockets, filesystem synchronization, or direct writes to DaoMotion persistence.
 ---
 
 # Dao Motion
 
 Operate Motion Lab only through the official Roblox Studio MCP and the plugin-owned Studio gateway. Treat the gateway as the sole authoring API. Never reconstruct or mutate private `DaoMotion` Instance persistence with arbitrary Luau.
+
+## Scope boundary
+
+- Use this skill only for node-graph authoring inside Roblox Studio after the user explicitly invokes `$dao-motion`.
+- Do not inspect or edit Library Bridge plugin source, pipeline, runtime-generation, Scheduler, Emitter, Canvas, build, test, or packaging files as part of this skill.
+- If the request is a plugin implementation or pipeline bug, stop using this skill and follow the workspace's normal source-code workflow.
 
 ## Verification boundary
 
